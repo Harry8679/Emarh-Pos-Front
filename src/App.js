@@ -5,6 +5,8 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Items from './pages/Items';
+import Customers from './components/Customers';
+import Bills from './components/Bills';
 // Tu pourras ajouter Bills, Customers, etc. aussi ici
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/items" element={<Items />} />
+            <Route path="/bills" element={<Bills />} />
+            <Route path="/customers" element={<Customers />} />
             {/* Tu peux ajouter plus de routes ici comme : */}
             {/* <Route path="/bills" element={<Bills />} /> */}
           </Routes>
